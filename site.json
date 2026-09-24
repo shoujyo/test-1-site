@@ -1,0 +1,153 @@
+{
+  "kind": "lit-orbit-site",
+  "format": 1,
+  "title": "Test 1",
+  "description": "",
+  "paper": {
+    "citation": "Test paper",
+    "url": "https://example.com/"
+  },
+  "madeWith": "http://localhost:5173/",
+  "courseName": "Test Course",
+  "mapping": {
+    "idKey": "ID",
+    "labelKey": "Title",
+    "wedgeKey": "AI role",
+    "colourKey": "Outcome",
+    "sizeKey": "Sample size",
+    "tierKey": "Evidence tier"
+  },
+  "filterKeys": [
+    "Course level",
+    "AI tools used",
+    "Rubric provided",
+    "Effect size (d)"
+  ],
+  "tierSource": "column",
+  "tierRules": [
+    {
+      "tier": 5,
+      "name": "Other / Not Reported",
+      "conditions": []
+    }
+  ],
+  "columnRules": {
+    "ID": {
+      "split": null,
+      "prefix": null,
+      "bands": null
+    },
+    "Title": {
+      "split": null,
+      "prefix": null,
+      "bands": null
+    },
+    "AI role": {
+      "split": null,
+      "prefix": null,
+      "bands": null
+    },
+    "Outcome": {
+      "split": null,
+      "prefix": null,
+      "bands": null
+    },
+    "Course level": {
+      "split": null,
+      "prefix": null,
+      "bands": null
+    },
+    "AI tools used": {
+      "split": ";",
+      "prefix": null,
+      "bands": null
+    },
+    "Rubric provided": {
+      "split": null,
+      "prefix": "dash",
+      "bands": null
+    },
+    "Sample size": {
+      "split": null,
+      "prefix": null,
+      "bands": null
+    },
+    "Evidence tier": {
+      "split": null,
+      "prefix": null,
+      "bands": null
+    },
+    "Effect size (d)": {
+      "split": null,
+      "prefix": null,
+      "bands": 5
+    },
+    "Pass rate": {
+      "split": null,
+      "prefix": null,
+      "bands": 5
+    },
+    "Published": {
+      "split": null,
+      "prefix": null,
+      "bands": null
+    },
+    "Peer reviewed": {
+      "split": null,
+      "prefix": null,
+      "bands": null
+    },
+    "Notes": {
+      "split": null,
+      "prefix": null,
+      "bands": null
+    },
+    "Reviewer comments": {
+      "split": null,
+      "prefix": null,
+      "bands": null
+    }
+  },
+  "batch": {
+    "name": "column-types-test.xlsx",
+    "columns": [
+      "ID",
+      "Title",
+      "AI role",
+      "Outcome",
+      "Course level",
+      "AI tools used",
+      "Rubric provided",
+      "Sample size",
+      "Evidence tier",
+      "Effect size (d)",
+      "Pass rate",
+      "Published",
+      "Peer reviewed",
+      "Notes",
+      "Reviewer comments"
+    ],
+    "rows": [
+      ["S01","Chatbot Tutors in CS1: Effects on Novice Debugging","Tutor","Positive","Introductory","ChatGPT","Yes - the tutor was pre-loaded with the course rubric",142,2,0.48,0.78,"2023-03-14","Yes","Weekly lab sessions over one semester.",null],
+      ["S02","Pair Programming with an AI Partner in an Introductory Course","Pair programmer","Mixed","Introductory","GitHub Copilot; ChatGPT","No",64,3,0.12,0.71,"2023-09-02","Yes","Compared solo work with AI-paired work on the same tasks.",null],
+      ["S03","Automated Feedback on Programming Assignments Using Large Language Models","Feedback provider","Positive","Intermediate","ChatGPT; Claude","Yes - rubric pasted into every prompt",210,2,0.61,0.84,"2024-01-22","Yes",null,null],
+      ["S04","Can LLMs Grade Code? Agreement with Human Teaching Assistants","Grader","Mixed","Introductory","ChatGPT","Yes - graded against the official marking scheme",38,4,0.27,0.66,"2023-11-08","No","Agreement with TAs was highest on correctness, lowest on style.",null],
+      ["S05","Help-Seeking with AI Debugging Assistants in CS1","Debugging aid","Positive","Introductory","CodeHelp","No - students asked free-form questions",96,3,0.55,0.8,"2024-05-17","Yes","Help requests peaked the night before deadlines.",null],
+      ["S06","Generating Practice Exercises for Data Structures with GPT Models","Exercise generator","Positive","Intermediate","ChatGPT; Gemini","No","Not reported",5,0.72,0.9,"2024-02-29","No",null,null],
+      ["S07","An AI Teaching Assistant for Large Programming Courses","Tutor","Positive","Introductory","Custom tutor bot","Partly - only the style criteria were shared",480,1,0.83,0.87,"2022-10-11","Yes","Deployed to three lecture sections at once.",null],
+      ["S08","Code Completion Tools and Learning Outcomes in CS2","Pair programmer","Negative","Intermediate","GitHub Copilot","No",73,3,-0.21,0.62,"2023-06-30","Yes","Autocomplete was disabled in the control group.",null],
+      ["S09","Feedback Quality of AI-Generated Hints: A Classroom Study","Feedback provider","Mixed","Introductory","ChatGPT; Claude; Gemini","Yes - rubric pasted into every prompt",155,2,0.19,0.74,"2024-08-05","Yes",null,null],
+      ["S10","Scaling Assessment in Software Engineering with LLM Graders","Grader","Positive","Advanced","Claude","Yes - graded against the official marking scheme",312,1,0.94,0.92,"2025-01-13","Yes","Graders flagged borderline scripts for human review.",null],
+      ["S11","Explaining Compiler Error Messages with a Chat Assistant","Debugging aid","Positive","Introductory","ChatGPT","No",88,4,0.66,0.83,"2023-04-27","No",null,null],
+      ["S12","Personalised Exercises for an Algorithms Course","Exercise generator","No effect","Advanced","Gemini","Not reported",45,5,0.03,0.69,"2024-11-19","Yes","Exercises were adapted to each student's past errors.",null],
+      ["S13","Guardrailed Tutoring Bots for Academic Integrity","Tutor","Mixed","Intermediate","Custom tutor bot; ChatGPT","Partly - rubric summarised by the instructor",260,3,0.31,0.76,"2025-03-03","Yes","The bot refused to write full solutions.",null],
+      ["S14","Copilot in the Capstone: Productivity versus Understanding","Pair programmer","Negative","Advanced","GitHub Copilot; Copilot Chat","No",52,2,-0.35,0.58,"2024-06-21","Yes","Teams shipped faster but explained their code less well.",null],
+      ["S15","Rubric-Aware Feedback Generation for Lab Reports","Feedback provider","Positive","Intermediate","Claude","Yes - rubric pasted into every prompt",120,3,0.58,0.81,"2025-05-09","No",null,null],
+      ["S16","Consistency of LLM-Based Marking Across Semesters","Grader","Mixed","Advanced","ChatGPT; Claude","Yes - graded against the official marking scheme",390,1,0.22,0.73,"2025-02-14","Yes","Marking drifted when the model version changed.",null],
+      ["S17","Novices Debugging with Conversational Agents","Debugging aid","Positive","Introductory","CodeHelp; ChatGPT","No - hints only without marking",34,4,0.77,0.86,"2022-12-01","Yes","Think-aloud sessions with a subset of volunteers.",null],
+      ["S18","Worked Examples Generated on Demand in CS1","Exercise generator","No effect","Introductory","ChatGPT","Not reported",175,5,-0.04,0.7,"2024-09-16","No",null,null],
+      ["S19","Socratic Tutoring Prompts for Operating Systems Labs","Tutor","Positive","Advanced","Custom tutor bot","Partly - only the style criteria were shared",58,4,0.69,0.88,"2025-06-24","Yes","Prompts asked questions instead of giving answers.",null],
+      ["S20","Students as Critics: Reviewing AI-Written Code","Pair programmer","Mixed","Intermediate","GitHub Copilot; ChatGPT","No",81,3,0.15,0.67,"2025-04-02","Yes","Students critiqued AI-written pull requests.",null]
+    ]
+  }
+}
